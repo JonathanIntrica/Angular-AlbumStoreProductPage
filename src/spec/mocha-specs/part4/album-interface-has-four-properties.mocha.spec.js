@@ -6,13 +6,13 @@ describe('Album Interface', function () {
   it(`should have name property of type string @album-interface-has-four-properties`, function () {
     let file
     try {
-      file = fs.readFileSync(__dirname + '/../../../app/Album.ts').toString();
+      file = fs.readFileSync(__dirname + '/../../../app/album.ts').toString();
     } catch (e) {
       assert(false, "The Album interface doesn't exist yet.")
     }
     let re = /export\s+interface\s+Album\s*\{\s*([\w\s\:\;\[\]]+)\s*\}/
     let match = file.match(re);
-    assert(Array.isArray(match) && match != null, "There's an `Album.ts` file, but it doesn't export an interface named `Album`.");
+    assert(Array.isArray(match) && match != null, "There's an `album.ts` file, but it doesn't export an interface named `Album`.");
 
     let arr = match[1].split('\n');
     for (let i = 0; i < arr.length; i++) {
@@ -46,13 +46,13 @@ describe('Album Interface', function () {
   it(`should have releaseDate property of type string @album-interface-has-four-properties`, function () {
     let file
     try {
-      file = fs.readFileSync(__dirname + '/../../../app/Album.ts').toString();
+      file = fs.readFileSync(__dirname + '/../../../app/album.ts').toString();
     } catch (e) {
       assert(false, "The Album interface doesn't exist yet.")
     }
     let re = /export\s+interface\s+Album\s*\{\s*([\w\s\:\;\[\]]+)\s*\}/
     let match = file.match(re);
-    assert(Array.isArray(match) && match != null, "There's an `Album.ts` file, but it doesn't export an interface named `Album`.");
+    assert(Array.isArray(match) && match != null, "There's an `album.ts` file, but it doesn't export an interface named `Album`.");
 
     let arr = match[1].split('\n');
     for (let i = 0; i < arr.length; i++) {
@@ -86,13 +86,13 @@ describe('Album Interface', function () {
   it(`should have coverImage property of type string @album-interface-has-four-properties`, function () {
     let file
     try {
-      file = fs.readFileSync(__dirname + '/../../../app/Album.ts').toString();
+      file = fs.readFileSync(__dirname + '/../../../app/album.ts').toString();
     } catch (e) {
       assert(false, "The Album interface doesn't exist yet.")
     }
     let re = /export\s+interface\s+Album\s*\{\s*([\w\s\:\;\[\]]+)\s*\}/
     let match = file.match(re);
-    assert(Array.isArray(match) && match != null, "There's an `Album.ts` file, but it doesn't export an interface named `Album`.");
+    assert(Array.isArray(match) && match != null, "There's an `album.ts` file, but it doesn't export an interface named `Album`.");
 
     let arr = match[1].split('\n');
     for (let i = 0; i < arr.length; i++) {
@@ -125,13 +125,13 @@ describe('Album Interface', function () {
   it(`should have tracks property of type Track[] @album-interface-has-four-properties`, function () {
     let file
     try {
-      file = fs.readFileSync(__dirname + '/../../../app/Album.ts').toString();
+      file = fs.readFileSync(__dirname + '/../../../app/album.ts').toString();
     } catch (e) {
       assert(false, "The Album interface doesn't exist yet.")
     }
     let re = /export\s+interface\s+Album\s*\{\s*([\w\s\:\;\[\]]+)\s*\}/
     let match = file.match(re);
-    assert(Array.isArray(match) && match != null, "There's an `Album.ts` file, but it doesn't export an interface named `Album`.");
+    assert(Array.isArray(match) && match != null, "There's an `album.ts` file, but it doesn't export an interface named `Album`.");
 
     let arr = match[1].split('\n');
     for (let i = 0; i < arr.length; i++) {
